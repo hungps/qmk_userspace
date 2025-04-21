@@ -196,8 +196,8 @@ static void print_status_narrow(void) {
         case DEF:
             oled_write("Clmk\n", false);
             break;
-        case GAM:
-            oled_write("Gam\n", false);
+        case SYS:
+            oled_write("Sys\n", false);
             break;
         case NAV:
             oled_write("Nav\n", false);
