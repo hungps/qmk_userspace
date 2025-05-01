@@ -79,15 +79,19 @@ combo_t key_combos[] = {
 
 
 const key_override_t rm_next_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_NEXT, RM_PREV);
-const key_override_t rm_hueu_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_HUEU, RM_HUED);
-const key_override_t rm_satu_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_SATU, RM_SATD);
-const key_override_t rm_valu_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_VALU, RM_VALD);
-const key_override_t rm_spdu_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_SPDU, RM_SPDD);
+const key_override_t rm_hue_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_HUEU, RM_HUED);
+const key_override_t rm_sat_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_SATU, RM_SATD);
+const key_override_t rm_val_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_VALU, RM_VALD);
+const key_override_t rm_spd_key_override = ko_make_basic(MOD_MASK_SHIFT, RM_SPDU, RM_SPDD);
+const key_override_t comm_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_COMM, KC_SCLN);
+const key_override_t dot_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_DOT, KC_COLN);
 
 const key_override_t *key_overrides[] = {
     &rm_next_key_override,
-    &rm_hueu_key_override,
-    &rm_satu_key_override,
-    &rm_valu_key_override,
-    &rm_spdu_key_override
+    &rm_hue_key_override,
+    &rm_sat_key_override,
+    &rm_val_key_override,
+    &rm_spd_key_override,
+    &comm_key_override,
+    &dot_key_override
 };
