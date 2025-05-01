@@ -214,9 +214,9 @@ static void print_status_narrow(void) {
 
     // /* caps lock */
     oled_set_cursor(0, 9);
-    if (is_caps_word_on()) {
-        oled_write("CPSLK", false);
-    }
+    // if (is_caps_word_on()) {
+    //     oled_write("CPSLK", false);
+    // }
 
 }
 
