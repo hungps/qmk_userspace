@@ -27,35 +27,35 @@
 #define MEH_K MEH_T(KC_K)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [DEF] = LAYOUT_split_3x5_3(
+    [DEF] = LAYOUT_hungps(
         KC_Q,    KC_W,    KC_F,    KC_P,        KC_B,                                   KC_J,       KC_L,      KC_U,    KC_Y,    KC_QUOT,
         HOME_A,  HOME_R,  HOME_S,  HOME_T,      HYPR_G,                                 HYPR_M,     HOME_N,    HOME_E,  HOME_I,  HOME_O,
         KC_Z,    KC_X,    KC_C,    KC_D,        MEH_V,                                  MEH_K,      KC_H,      KC_COMM, KC_DOT,  KC_SLSH,
                                    LT_NAV_ESC,  LT_NUM_SPC, KC_TAB,         KC_ENTER,   LT_SYM_BSPC,LT_SYS_DEL
     ),
 
-    [NAV] = LAYOUT_split_3x5_3(
+    [NAV] = LAYOUT_hungps(
         PRNSCR,  RECORD,  KC_VOLD, KC_VOLU,     KC_MUTE,                                MS_WHLL,    MS_WHLD, MS_WHLU, MS_WHLR, KC_LPAD,
         KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT,     XXXXXXX,                                KC_LEFT,    KC_DOWN, KC_UP,   KC_RGHT, KC_MCTL,
         SPACE_L, SPACE_R, KC_MPRV, KC_MNXT,     KC_MPLY,                                MS_LEFT,    MS_DOWN, MS_UP,   MS_RGHT, SPTLGHT,
                                    XXXXXXX,     _______,    _______,        MS_BTN1,    MS_BTN2,    MS_BTN3
     ),
 
-    [NUM] = LAYOUT_split_3x5_3(
+    [NUM] = LAYOUT_hungps(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX,                                KC_PLUS,    KC_7,    KC_8,    KC_9,    KC_ASTR,
         KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT,     XXXXXXX,                                KC_MINS,    KC_4,    KC_5,    KC_6,    KC_SLSH,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX,                                KC_COMM,    KC_1,    KC_2,    KC_3,    KC_PERC,
                                    _______,     XXXXXXX,    _______,        KC_PEQL,    KC_DOT,     KC_0
     ),
 
-    [SYM] = LAYOUT_split_3x5_3(
+    [SYM] = LAYOUT_hungps(
         KC_LABK, KC_LCBR, KC_LBRC, KC_LPRN,     KC_CIRC,                                KC_DLR,     KC_RPRN, KC_RBRC, KC_RCBR, KC_RABK,
         KC_AMPR, KC_PIPE, KC_EXLM, KC_QUES,     KC_COLN,                                KC_TILD,    KC_RSFT, KC_RGUI, KC_RALT, KC_RCTL,
         KC_PLUS, KC_MINS, KC_ASTR, KC_SLSH,     KC_PERC,                                KC_GRV,     KC_UNDS, KC_AT,   KC_HASH, KC_BSLS,
                                    _______,     _______,    _______,        _______,    XXXXXXX,    _______
     ),
 
-    [SYS] = LAYOUT_split_3x5_3(
+    [SYS] = LAYOUT_hungps(
         KC_SLEP, RM_SATU, RM_VALU, RM_NEXT,     RM_TOGG,                                XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, RM_HUEU, RM_SPDU, XXXXXXX,     XXXXXXX,                                XXXXXXX,    KC_RSFT, KC_RGUI, KC_RALT, KC_RCTL,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX,                                XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,

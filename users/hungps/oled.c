@@ -168,7 +168,7 @@ static void print_logo_narrow(void) {
     oled_write(wpm_str, false);
 
     oled_set_cursor(0, 15);
-    oled_write(" wpm", false);
+    oled_write("wpm", false);
 }
 
 static void print_status_narrow(void) {
