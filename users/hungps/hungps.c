@@ -9,6 +9,8 @@
 #define LT_NUM_SPC LT(NUM, KC_SPC)
 #define LT_SYM_BSPC LT(SYM, KC_BSPC)
 #define LT_SYS_DEL LT(SYS, KC_DEL)
+#define DF_GAM DF(GAM)
+#define DF_DEF DF(DEF)
 #define RECORD G(S(KC_5))
 #define PRNSCR G(S(KC_4))
 
@@ -26,6 +28,11 @@
 #define HYPR_M HYPR_T(KC_M)
 #define MEH_K MEH_T(KC_K)
 
+#define HOME_Z LCTL_T(KC_Z)
+#define HOME_X LALT_T(KC_X)
+#define HOME_C LGUI_T(KC_C)
+#define HOME_V LSFT_T(KC_V)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [DEF] = LAYOUT_hungps(
         KC_Q,    KC_W,    KC_F,    KC_P,        KC_B,                                   KC_J,       KC_L,      KC_U,    KC_Y,    KC_QUOT,
@@ -35,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [NAV] = LAYOUT_hungps(
-        PRNSCR,  RECORD,  KC_VOLD, KC_VOLU,     KC_MUTE,                                MS_WHLL,    MS_WHLD, MS_WHLU, MS_WHLR, KC_LPAD,
+        PRNSCR,  RECORD,  KC_VOLD, KC_VOLU,     KC_MUTE,                                MS_WHLL,    MS_WHLD, MS_WHLU, MS_WHLR, DF_GAM,
         KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT,     XXXXXXX,                                KC_LEFT,    KC_DOWN, KC_UP,   KC_RGHT, KC_MCTL,
         SPACE_L, SPACE_R, KC_MPRV, KC_MNXT,     KC_MPLY,                                MS_LEFT,    MS_DOWN, MS_UP,   MS_RGHT, SPTLGHT,
                                    XXXXXXX,     _______,    _______,        MS_BTN1,    MS_BTN2,    MS_BTN3
@@ -60,6 +67,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, RM_HUEU, RM_SPDU, XXXXXXX,     XXXXXXX,                                XXXXXXX,    KC_RSFT, KC_RGUI, KC_RALT, KC_RCTL,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX,                                XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                                    _______,     _______,    _______,        _______,    _______,    XXXXXXX
+    ),
+
+    [GAM] = LAYOUT_hungps(
+        KC_Q,    KC_W,    KC_E,    KC_R,        KC_T,                                   KC_Y,       KC_U,      KC_UP,   KC_I,    KC_O,
+        KC_A,    KC_S,    KC_D,    KC_F,        KC_G,                                   KC_H,       KC_LEFT,   KC_DOWN, KC_RIGHT,KC_L,
+        HOME_Z,  HOME_X,  HOME_C,  HOME_V,      KC_B,                                   KC_N,       KC_M,      KC_J,    KC_K,    KC_P,
+                                   KC_ESC,      KC_SPC,     KC_TAB,         KC_ENTER,   KC_BSPC,    DF_DEF
     ),
 };
 

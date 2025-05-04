@@ -208,6 +208,9 @@ static void print_status_narrow(void) {
         case NUM:
             oled_write("Num\n", false);
             break;
+        case GAM:
+            oled_write("Gam\n", false);
+            break;
         default:
             oled_write("???\n", false);
     }
